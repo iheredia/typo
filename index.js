@@ -1,8 +1,8 @@
-// install express with `npm install express` 
-const express = require('express')
-const app = express()
+const server = require('./src/server')
 
-app.get('/', (req, res) => res.send('Hello World!'))
+if (process.env.DETA_EMULATED) {
+  server.listen(8080);
+  console.log('Listening http://localhost:8080');
+}
 
-// export 'app'
-module.exports = app
+module.exports = server;
