@@ -1,0 +1,626 @@
+iheredia@meli:~/repositories/iheredia/typo $ deta deploy
+Deploying...
+Successfully deployed changes
+Updating dependencies...
+
+> fsevents@1.2.13 install /tmp/node_modules/watchpack-chokidar2/node_modules/fsevents
+> node install.js
+
+
+Skipping 'fsevents' build as platform linux is not supported
+
+> node-sass@4.14.1 install /tmp/node_modules/node-sass
+> node scripts/install.js
+
+Downloading binary from https://github.com/sass/node-sass/releases/download/v4.14.1/linux-x64-72_binding.node
+Download complete
+Binary saved to /tmp/node_modules/node-sass/vendor/linux-x64-72/binding.node
+Caching binary to /root/.npm/node-sass/4.14.1/linux-x64-72_binding.node
+
+> core-js@2.6.11 postinstall /tmp/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon:
+> https://opencollective.com/core-js
+> https://www.patreon.com/zloirock
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+
+> node-sass@4.14.1 postinstall /tmp/node_modules/node-sass
+> node scripts/build.js
+
+Building: /usr/bin/node /tmp/node_modules/node-gyp/bin/node-gyp.js rebuild --verbose --libsass_ext= --libsass_cflags= --libsass_ldflags= --libsass_library=
+gyp info it worked if it ends with ok
+gyp verb cli [
+gyp verb cli   '/usr/bin/node',
+gyp verb cli   '/tmp/node_modules/node-gyp/bin/node-gyp.js',
+gyp verb cli   'rebuild',
+gyp verb cli   '--verbose',
+gyp verb cli   '--libsass_ext=',
+gyp verb cli   '--libsass_cflags=',
+gyp verb cli   '--libsass_ldflags=',
+gyp verb cli   '--libsass_library='
+gyp verb cli ]
+gyp info using node-gyp@3.8.0
+gyp info using node@12.16.1 | linux | x64
+gyp verb command rebuild []
+gyp verb command clean []
+gyp verb clean removing "build" directory
+gyp verb command configure []
+gyp verb check python checking for Python executable "python2" in the PATH
+gyp verb `which` succeeded python2 /usr/bin/python2
+gyp verb check python version `/usr/bin/python2 -c "import sys; print "2.7.16
+gyp verb check python version .%s.%s" % sys.version_info[:3];"` returned: %j
+gyp verb get node dir no --target version specified, falling back to host node version: 12.16.1
+gyp verb command install [ '12.16.1' ]
+gyp verb install input version string "12.16.1"
+gyp verb install installing version: 12.16.1
+gyp verb install --ensure was passed, so won't reinstall if already installed
+gyp verb install version not already installed, continuing with install 12.16.1
+gyp verb ensuring nodedir is created /root/.node-gyp/12.16.1
+gyp verb created nodedir /root/.node-gyp
+gyp http GET https://nodejs.org/download/release/v12.16.1/node-v12.16.1-headers.tar.gz
+gyp http 200 https://nodejs.org/download/release/v12.16.1/node-v12.16.1-headers.tar.gz
+gyp verb extracted file from tarball include/node/common.gypi
+gyp verb extracted file from tarball include/node/config.gypi
+gyp verb extracted file from tarball include/node/node.h
+gyp verb extracted file from tarball include/node/node_api.h
+gyp verb extracted file from tarball include/node/js_native_api.h
+gyp verb extracted file from tarball include/node/js_native_api_types.h
+gyp verb extracted file from tarball include/node/node_api_types.h
+gyp verb extracted file from tarball include/node/node_buffer.h
+gyp verb extracted file from tarball include/node/node_object_wrap.h
+gyp verb extracted file from tarball include/node/node_version.h
+gyp verb extracted file from tarball include/node/v8-wasm-trap-handler-win.h
+gyp verb extracted file from tarball include/node/v8.h
+gyp verb extracted file from tarball include/node/v8-profiler.h
+gyp verb extracted file from tarball include/node/v8-util.h
+gyp verb extracted file from tarball include/node/v8-platform.h
+gyp verb extracted file from tarball include/node/v8-value-serializer-version.h
+gyp verb extracted file from tarball include/node/v8-version-string.h
+gyp verb extracted file from tarball include/node/v8-version.h
+gyp verb extracted file from tarball include/node/v8config.h
+gyp verb extracted file from tarball include/node/v8-internal.h
+gyp verb extracted file from tarball include/node/v8-wasm-trap-handler-posix.h
+gyp verb extracted file from tarball include/node/v8-testing.h
+gyp verb extracted file from tarball include/node/libplatform/libplatform-export.h
+gyp verb extracted file from tarball include/node/libplatform/libplatform.h
+gyp verb extracted file from tarball include/node/libplatform/v8-tracing.h
+gyp verb extracted file from tarball include/node/uv/aix.h
+gyp verb extracted file from tarball include/node/uv/android-ifaddrs.h
+gyp verb extracted file from tarball include/node/uv/bsd.h
+gyp verb extracted file from tarball include/node/uv/darwin.h
+gyp verb extracted file from tarball include/node/uv/linux.h
+gyp verb extracted file from tarball include/node/uv/os390.h
+gyp verb extracted file from tarball include/node/uv/posix.h
+gyp verb extracted file from tarball include/node/uv/stdint-msvc2008.h
+gyp verb extracted file from tarball include/node/uv/sunos.h
+gyp verb extracted file from tarball include/node/uv/threadpool.h
+gyp verb extracted file from tarball include/node/uv/tree.h
+gyp verb extracted file from tarball include/node/uv/errno.h
+gyp verb extracted file from tarball include/node/uv/unix.h
+gyp verb extracted file from tarball include/node/uv/win.h
+gyp verb extracted file from tarball include/node/uv/version.h
+gyp verb extracted file from tarball include/node/uv.h
+gyp verb extracted file from tarball include/node/openssl/pkcs7.h
+gyp verb extracted file from tarball include/node/openssl/rand.h
+gyp verb extracted file from tarball include/node/openssl/sslerr.h
+gyp verb extracted file from tarball include/node/openssl/rc2.h
+gyp verb extracted file from tarball include/node/openssl/rc4.h
+gyp verb extracted file from tarball include/node/openssl/rc5.h
+gyp verb extracted file from tarball include/node/openssl/ripemd.h
+gyp verb extracted file from tarball include/node/openssl/seed.h
+gyp verb extracted file from tarball include/node/openssl/sha.h
+gyp verb extracted file from tarball include/node/openssl/ssl2.h
+gyp verb extracted file from tarball include/node/openssl/store.h
+gyp verb extracted file from tarball include/node/openssl/whrlpool.h
+gyp verb extracted file from tarball include/node/openssl/rand_drbg.h
+gyp verb extracted file from tarball include/node/openssl/rsa.h
+gyp verb extracted file from tarball include/node/openssl/symhacks.h
+gyp verb extracted file from tarball include/node/openssl/asn1.h
+gyp verb extracted file from tarball include/node/openssl/async.h
+gyp verb extracted file from tarball include/node/openssl/bioerr.h
+gyp verb extracted file from tarball include/node/openssl/buffer.h
+gyp verb extracted file from tarball include/node/openssl/cmserr.h
+gyp verb extracted file from tarball include/node/openssl/conf.h
+gyp verb extracted file from tarball include/node/openssl/cryptoerr.h
+gyp verb extracted file from tarball include/node/openssl/dherr.h
+gyp verb extracted file from tarball include/node/openssl/dtls1.h
+gyp verb extracted file from tarball include/node/openssl/ecerr.h
+gyp verb extracted file from tarball include/node/openssl/evp.h
+gyp verb extracted file from tarball include/node/openssl/kdf.h
+gyp verb extracted file from tarball include/node/openssl/obj_mac.h
+gyp verb extracted file from tarball include/node/openssl/ossl_typ.h
+gyp verb extracted file from tarball include/node/openssl/pem.h
+gyp verb extracted file from tarball include/node/openssl/randerr.h
+gyp verb extracted file from tarball include/node/openssl/safestack.h
+gyp verb extracted file from tarball include/node/openssl/asn1t.h
+gyp verb extracted file from tarball include/node/openssl/bio.h
+gyp verb extracted file from tarball include/node/openssl/bnerr.h
+gyp verb extracted file from tarball include/node/openssl/cms.h
+gyp verb extracted file from tarball include/node/openssl/comperr.h
+gyp verb extracted file from tarball include/node/openssl/crypto.h
+gyp verb extracted file from tarball include/node/openssl/cterr.h
+gyp verb extracted file from tarball include/node/openssl/dsaerr.h
+gyp verb extracted file from tarball include/node/openssl/ec.h
+gyp verb extracted file from tarball include/node/openssl/engine.h
+gyp verb extracted file from tarball include/node/openssl/evperr.h
+gyp verb extracted file from tarball include/node/openssl/lhash.h
+gyp verb extracted file from tarball include/node/openssl/objects.h
+gyp verb extracted file from tarball include/node/openssl/pem2.h
+gyp verb extracted file from tarball include/node/openssl/ssl.h
+gyp verb extracted file from tarball include/node/openssl/aes.h
+gyp verb extracted file from tarball include/node/openssl/asn1_mac.h
+gyp verb extracted file from tarball include/node/openssl/pkcs12.h
+gyp verb extracted file from tarball include/node/openssl/stack.h
+gyp verb extracted file from tarball include/node/openssl/blowfish.h
+gyp verb extracted file from tarball include/node/openssl/camellia.h
+gyp verb extracted file from tarball include/node/openssl/cast.h
+gyp verb extracted file from tarball include/node/openssl/cmac.h
+gyp verb extracted file from tarball include/node/openssl/pkcs12err.h
+gyp verb extracted file from tarball include/node/openssl/conf_api.h
+gyp verb extracted file from tarball include/node/openssl/des.h
+gyp verb extracted file from tarball include/node/openssl/opensslv.h
+gyp verb extracted file from tarball include/node/openssl/rsaerr.h
+gyp verb extracted file from tarball include/node/openssl/ebcdic.h
+gyp verb extracted file from tarball include/node/openssl/ecdh.h
+gyp verb extracted file from tarball include/node/openssl/ecdsa.h
+gyp verb extracted file from tarball include/node/openssl/ocsp.h
+gyp verb extracted file from tarball include/node/openssl/pkcs7err.h
+gyp verb extracted file from tarball include/node/openssl/idea.h
+gyp verb extracted file from tarball include/node/openssl/md2.h
+gyp verb extracted file from tarball include/node/openssl/md4.h
+gyp verb extracted file from tarball include/node/openssl/mdc2.h
+gyp verb extracted file from tarball include/node/openssl/srp.h
+gyp verb extracted file from tarball include/node/openssl/srtp.h
+gyp verb extracted file from tarball include/node/openssl/asn1err.h
+gyp verb extracted file from tarball include/node/openssl/asyncerr.h
+gyp verb extracted file from tarball include/node/openssl/bn.h
+gyp verb extracted file from tarball include/node/openssl/buffererr.h
+gyp verb extracted file from tarball include/node/openssl/comp.h
+gyp verb extracted file from tarball include/node/openssl/conferr.h
+gyp verb extracted file from tarball include/node/openssl/ct.h
+gyp verb extracted file from tarball include/node/openssl/dh.h
+gyp verb extracted file from tarball include/node/openssl/dsa.h
+gyp verb extracted file from tarball include/node/openssl/e_os2.h
+gyp verb extracted file from tarball include/node/openssl/engineerr.h
+gyp verb extracted file from tarball include/node/openssl/hmac.h
+gyp verb extracted file from tarball include/node/openssl/modes.h
+gyp verb extracted file from tarball include/node/openssl/objectserr.h
+gyp verb extracted file from tarball include/node/openssl/pemerr.h
+gyp verb extracted file from tarball include/node/openssl/ssl3.h
+gyp verb extracted file from tarball include/node/openssl/md5.h
+gyp verb extracted file from tarball include/node/openssl/err.h
+gyp verb extracted file from tarball include/node/openssl/kdferr.h
+gyp verb extracted file from tarball include/node/openssl/ocsperr.h
+gyp verb extracted file from tarball include/node/openssl/storeerr.h
+gyp verb extracted file from tarball include/node/openssl/tls1.h
+gyp verb extracted file from tarball include/node/openssl/ts.h
+gyp verb extracted file from tarball include/node/openssl/tserr.h
+gyp verb extracted file from tarball include/node/openssl/txt_db.h
+gyp verb extracted file from tarball include/node/openssl/ui.h
+gyp verb extracted file from tarball include/node/openssl/uierr.h
+gyp verb extracted file from tarball include/node/openssl/x509.h
+gyp verb extracted file from tarball include/node/openssl/x509_vfy.h
+gyp verb extracted file from tarball include/node/openssl/x509err.h
+gyp verb extracted file from tarball include/node/openssl/x509v3.h
+gyp verb extracted file from tarball include/node/openssl/x509v3err.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64le/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/asm/crypto/buildinf.h
+gyp verb content checksum node-v12.16.1-headers.tar.gz 815e732561b6be1b2389b0cac53e34b65ad1835a5f0354d9888d992a4613947f
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-mips64/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm_avx2/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm_avx2/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm_avx2/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm_avx2/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm_avx2/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64-ARM/no-asm/crypto/include/internal/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64-ARM/no-asm/crypto/include/internal/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64-ARM/no-asm/crypto/buildinf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64-ARM/no-asm/include/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64-ARM/no-asm/include/progs.h
+gyp verb extracted file from tarball include/node/openssl/bn_conf.h
+gyp verb extracted file from tarball include/node/openssl/bn_conf_asm.h
+gyp verb extracted file from tarball include/node/openssl/dso_conf.h
+gyp verb extracted file from tarball include/node/openssl/dso_conf_asm.h
+gyp verb extracted file from tarball include/node/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/bn_conf_no-asm.h
+gyp verb extracted file from tarball include/node/openssl/dso_conf_no-asm.h
+gyp verb extracted file from tarball include/node/openssl/opensslconf_asm.h
+gyp verb extracted file from tarball include/node/openssl/opensslconf_no-asm.h
+gyp verb extracted file from tarball include/node/zconf.h
+gyp verb extracted file from tarball include/node/zlib.h
+gyp verb tarball done parsing tarball
+gyp verb check download content checksum, need to download `SHASUMS256.txt`...
+gyp verb checksum url https://nodejs.org/download/release/v12.16.1/SHASUMS256.txt
+gyp http GET https://nodejs.org/download/release/v12.16.1/SHASUMS256.txt
+gyp http 200 https://nodejs.org/download/release/v12.16.1/SHASUMS256.txt
+gyp verb checksum data {"node-v12.16.1-aix-ppc64.tar.gz":"d928dd3dc4a79c39e45aa8f1f00c33117eb6145001427cb4dd838340932d8f2d","node-v12.16.1-darwin-x64.tar.gz":"34895bce210ca4b3cf19cd480e6563588880dd7f5d798f3782e3650580d35920","node-v12.16.1-darwin-x64.tar.xz":"7d20b9955c96d99fad1ef0e849b340d3ca1386dacd6c79e19d1ad3695bad7f6b","node-v12.16.1-headers.tar.gz":"815e732561b6be1b2389b0cac53e34b65ad1835a5f0354d9888d992a4613947f","node-v12.16.1-headers.tar.xz":"602ad5ba8ccf076215e0547632329d8a5c3ab0275a293ee1aebbfdd9345d2a6a","node-v12.16.1-linux-arm64.tar.gz":"22750695d432e22f2a1faadfcd534a88a18933ffd658d45b08a5afa61acbc24a","node-v12.16.1-linux-arm64.tar.xz":"396c43ba507b8ec33c70cdc6f73b4a7c725bddb3f74a85a8b8ed77b436856fed","node-v12.16.1-linux-armv7l.tar.gz":"d418d0516dfd744a8109e4ed58b021e3a1babb64baed2ebc30e613df97c643fb","node-v12.16.1-linux-armv7l.tar.xz":"593dbc7e52518815d02dd5019c54afa5ada3dd143482cbc533c8c1ea80f44349","node-v12.16.1-linux-ppc64le.tar.gz":"c8b1e47ac7a7a98f9f9b596b1ff567ad5416141317a3dcf4bff988508eb85bd6","node-v12.16.1-linux-ppc64le.tar.xz":"eee65be6b23245221920f18dded281f74a00dfa2479713134eea3146f1593ea6","node-v12.16.1-linux-s390x.tar.gz":"fef9eb79a9f5c50193ba369a2399998a86411f26eadc924674d915b06b71ac8f","node-v12.16.1-linux-s390x.tar.xz":"6a77be335dec9349a40216cea072f2ca6e53bf10a7276040bfbd33984cdc5b95","node-v12.16.1-linux-x64.tar.gz":"b2d9787da97d6c0d5cbf24c69fdbbf376b19089f921432c5a61aa323bc070bea","node-v12.16.1-linux-x64.tar.xz":"b826753f14df9771609ffb8e7d2cc4cb395247cb704cf0cea0f04132d9cf3505","node-v12.16.1.pkg":"268703502c475a3e6878de0b1e67e6cc06315f41f878c3ec0bd58291537357da","node-v12.16.1-sunos-x64.tar.gz":"fec3dd2fdadc2b2fd8be29ebe8cdb859eace84e920a32053585feae0e641e9ce","node-v12.16.1-sunos-x64.tar.xz":"fd5786acdc316a5eb64b73e274f44aa74ed2a74ef0b292cec2983bcab1ee96f0","node-v12.16.1.tar.gz":"4fe8c3454f9bee5bbe72d44aa25cd931859b3037b7a9473081b3b2bd1b465b95","node-v12.16.1.tar.xz":"0a95845ba02c46102b5671d0c5732460073f2d397488337e18d1fc30146d412d","node-v12.16.1-win-x64.7z":"e97aa4c4dc44185f55be7f46ff70a5594066f50853f3b7ad409cc108d32eef17","node-v12.16.1-win-x64.zip":"b93b73572c5e495154a9823d494de5729c77d1c83b041171154c4b5f3f76b590","node-v12.16.1-win-x86.7z":"2091f727d84044062e2657e20a24ccfbad3c699ee337c47d60ce77fcdadd711a","node-v12.16.1-win-x86.zip":"7d4cb6b9b96d221e5fbb28083d688f36561b05ae2f796a22ebd606f319834b39","node-v12.16.1-x64.msi":"bb70e966062e860e3497b4c5cd490485b722f28ad8eb0abfda7fe91e987c59f1","node-v12.16.1-x86.msi":"9fd8788c089bb77999b7f2e6ef94cb1721dd9f5b1b08d4ed2f81e89529c9137a","win-x64/node.exe":"3f8dabbe93d05367035df2078cb72a20c1b74cf1b41648ea91d902825902fcee","win-x64/node.lib":"4eb31990d5e46ba2a51d4fc14ef187ef51c403afe8823c71c557c0ba3cb6d732","win-x64/node_pdb.7z":"057803deaa2b29b597e15a82cfe78271f9320fc0cd23239564ab04df19ead3f6","win-x64/node_pdb.zip":"deee04ab036212fbaa2eeb5efec7e5ff87666dce3968c68450bf8fa12d1c2a59","win-x86/node.exe":"78fa91d73172df8e10e1824394087a9d6409259fdc3bd5a83fa90d53e4edb6a6","win-x86/node.lib":"67967c338c91652bbb376a0a4f3e0162478033d872d71af673e5ce127888ee50","win-x86/node_pdb.7z":"9e8b18c0df1fed91154fc9f7e5cf4e93a85b99ce653be0f77d6cd87f15556cc0","win-x86/node_pdb.zip":"b1a9c35d168c5876d040e1aeeb3e7c44c919f2716c560b44556cf9c6975991fc"}
+gyp verb download contents checksum {"node-v12.16.1-headers.tar.gz":"815e732561b6be1b2389b0cac53e34b65ad1835a5f0354d9888d992a4613947f"}
+gyp verb validating download checksum for node-v12.16.1-headers.tar.gz (815e732561b6be1b2389b0cac53e34b65ad1835a5f0354d9888d992a4613947f == 815e732561b6be1b2389b0cac53e34b65ad1835a5f0354d9888d992a4613947f)
+gyp verb get node dir target node version installed: 12.16.1
+gyp verb build dir attempting to create "build" dir: /tmp/node_modules/node-sass/build
+gyp verb build dir "build" dir needed to be created? /tmp/node_modules/node-sass/build
+gyp verb build/config.gypi creating config file
+gyp verb build/config.gypi writing out config file: /tmp/node_modules/node-sass/build/config.gypi
+gyp verb config.gypi checking for gypi file: /tmp/node_modules/node-sass/config.gypi
+gyp verb common.gypi checking for gypi file: /tmp/node_modules/node-sass/common.gypi
+gyp verb gyp gyp format was not specified; forcing "make"
+gyp info spawn /usr/bin/python2
+gyp info spawn args [
+gyp info spawn args   '/tmp/node_modules/node-gyp/gyp/gyp_main.py',
+gyp info spawn args   'binding.gyp',
+gyp info spawn args   '-f',
+gyp info spawn args   'make',
+gyp info spawn args   '-I',
+gyp info spawn args   '/tmp/node_modules/node-sass/build/config.gypi',
+gyp info spawn args   '-I',
+gyp info spawn args   '/tmp/node_modules/node-gyp/addon.gypi',
+gyp info spawn args   '-I',
+gyp info spawn args   '/root/.node-gyp/12.16.1/include/node/common.gypi',
+gyp info spawn args   '-Dlibrary=shared_library',
+gyp info spawn args   '-Dvisibility=default',
+gyp info spawn args   '-Dnode_root_dir=/root/.node-gyp/12.16.1',
+gyp info spawn args   '-Dnode_gyp_dir=/tmp/node_modules/node-gyp',
+gyp info spawn args   '-Dnode_lib_file=/root/.node-gyp/12.16.1/<(target_arch)/node.lib',
+gyp info spawn args   '-Dmodule_root_dir=/tmp/node_modules/node-sass',
+gyp info spawn args   '-Dnode_engine=v8',
+gyp info spawn args   '--depth=.',
+gyp info spawn args   '--no-parallel',
+gyp info spawn args   '--generator-output',
+gyp info spawn args   'build',
+gyp info spawn args   '-Goutput_dir=.'
+gyp info spawn args ]
+gyp verb command build []
+gyp verb build type Release
+gyp verb architecture x64
+gyp verb node dev dir /root/.node-gyp/12.16.1
+gyp ERR! build error
+gyp ERR! stack Error: not found: make
+gyp ERR! stack     at getNotFoundError (/tmp/node_modules/which/which.js:13:12)
+gyp ERR! stack     at F (/tmp/node_modules/which/which.js:68:19)
+gyp ERR! stack     at E (/tmp/node_modules/which/which.js:80:29)
+gyp ERR! stack     at /tmp/node_modules/which/which.js:89:16
+gyp ERR! stack     at /tmp/node_modules/isexe/index.js:42:5
+gyp ERR! stack     at /tmp/node_modules/isexe/mode.js:8:5
+gyp ERR! stack     at FSReqCallback.oncomplete (fs.js:166:21)
+gyp ERR! System Linux 4.14.158-129.185.amzn2.x86_64
+gyp ERR! command "/usr/bin/node" "/tmp/node_modules/node-gyp/bin/node-gyp.js" "rebuild" "--verbose" "--libsass_ext=" "--libsass_cflags=" "--libsass_ldflags=" "--libsass_library="
+gyp ERR! cwd /tmp/node_modules/node-sass
+gyp ERR! node -v v12.16.1
+gyp ERR! node-gyp -v v3.8.0
+gyp ERR! not ok
+Build failed with error code: 1
+
++ clean-webpack-plugin@3.0.0
++ @babel/preset-react@7.10.1
++ postcss-loader@3.0.0
++ webpack-cli@3.3.12
++ webpack@4.43.0
++ autoprefixer@9.8.4
++ @babel/register@7.10.3
++ @babel/core@7.10.3
++ node-sass@4.14.1
++ @babel/preset-env@7.10.3
++ webpack-manifest-plugin@2.2.0
++ css-loader@3.6.0
++ babel-loader@8.1.0
++ mini-css-extract-plugin@0.9.0
++ @babel/polyfill@7.10.1
++ sass-loader@8.0.2
+added 738 packages from 418 contributors and audited 1016 packages in 23.204s
+
+31 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities

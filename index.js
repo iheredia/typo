@@ -1,3 +1,10 @@
+require('@babel/register')({
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ]
+});
+
 const server = require('./src/server')
 
 if (process.env.DETA_EMULATED) {
