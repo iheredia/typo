@@ -19,4 +19,9 @@ app.use('/static', express.static(clientFolderPath, {maxAge: '1y', immutable: tr
 app.use('/api', apiRouter);
 app.use('/', appRouter);
 
-module.exports = app
+if (process.env.DETA_EMULATED) {
+  app.listen(8080);
+  console.log('Listening http://localhost:8080');
+}
+
+module.exports = app;
