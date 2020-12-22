@@ -1,10 +1,16 @@
-const axios = require('axios');
-const { apiKey } = require('../credentials.json');
+const path = require('path');
+const getFontsList = require('./helpers/get-fonts-list');
+const downloadFile = require('./helpers/download-file');
 
-const getPopularFonts = async () => {
-  const googleFontsAPIUrl = 'https://www.googleapis.com/webfonts/v1/webfonts';
-  const params = { sort: 'popularity', key: apiKey };
+const outputDir = path.join(__dirname, '..', 'fonts');
 
-  const { data: { items } } = await axios.get(googleFontsAPIUrl, { params })
-  return items
+const main = async () => {
+  const fonts = await getFontsList();
+  const firstFont = fonts[0];
+  const { family, variants, files } = firstFont;
+  const filePath = path.join(outputDir, `${family}-${variants[0]}.ttf`);
+  const url = files[variants[0]];
+  downloadFile(filePath, url);
 }
+
+main();
