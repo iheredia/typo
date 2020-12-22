@@ -1,6 +1,4 @@
-.deta
 .idea
 node_modules
 dist
-index.js
-index.js.map
+.cache
