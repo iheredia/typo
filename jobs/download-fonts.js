@@ -1,3 +1,13 @@
+console.log(`
+
+
+* Warning!
+* This script will download a lot of files
+* The total amount of space required is near 1gb
+
+
+`);
+
 const path = require('path');
 const parallelLimit = require('async/parallelLimit');
 const { getFontsList, downloadFile, makeOutputDir, ProgressBar } = require('./helpers');
@@ -30,7 +40,7 @@ const main = async () => {
 
   console.log(`${fontDownloadQueue.length} files from ${fonts.length} fonts`);
   progressBar.setTotal(fontDownloadQueue.length);
-  return parallelLimit(fontDownloadQueue, 1);
+  return parallelLimit(fontDownloadQueue, 5);
 }
 
 main();
