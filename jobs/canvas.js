@@ -8,21 +8,33 @@ registerCanvasFonts()
 const outputDir = path.join(__dirname, '..', 'images');
 makeOutputDir(outputDir);
 
-const canvas = createCanvas(200, 200)
+const canvasWidth = 500;
+const canvasHeight = 500;
+const canvas = createCanvas(canvasWidth, canvasHeight);
 const ctx = canvas.getContext('2d')
 
-ctx.font = '30px ubuntu-300'
-ctx.fillText('Awesome!', 0, 0)
+ctx.textBaseline = "middle";
+ctx.textAlign = "center";
 
-var text = ctx.measureText('Awesome!')
-ctx.strokeStyle = 'rgba(0,0,0,0.5)'
-ctx.beginPath()
-ctx.lineTo(50, 102)
-ctx.lineTo(50 + text.width, 102)
-ctx.stroke()
+const drawText = (fontFamily, text) => {
+  let fontSize = 10;
+  ctx.font = `${fontSize}px ${fontFamily}`;
+  while (ctx.measureText(text).width < canvasWidth) {
+    fontSize++;
+    ctx.font = `${fontSize}px ${fontFamily}`;
+  }
+  let finalFontSize = fontSize - 1;
+  console.log(fontFamily, finalFontSize);
+  ctx.font = `${finalFontSize}px ${fontFamily}`;
+  ctx.fillText(text, canvasWidth/2, canvasHeight/2);
+}
 
-const outputFile = path.join(outputDir, 'test-ubuntu2.png');
-const out = fs.createWriteStream(outputFile)
-const stream = canvas.createPNGStream()
-stream.pipe(out)
-out.on('finish', () =>  console.log('The PNG file was created.'))
+drawText('ubuntu-300', 'Texto de prueba');
+ctx.globalCompositeOperation = 'xor';
+drawText('roboto-300', 'Texto de prueba');
+
+const outputFile = path.join(outputDir, 'test-diff.png');
+const out = fs.createWriteStream(outputFile);
+const stream = canvas.createPNGStream();
+stream.pipe(out);
+out.on('finish', () =>  console.log('The PNG file was created.'));
